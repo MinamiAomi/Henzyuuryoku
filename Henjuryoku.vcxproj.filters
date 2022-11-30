@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="KamataEngine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="KamataEngine\Source">
+      <UniqueIdentifier>{d966e9f8-e880-44ae-8586-a08515e4cffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Include">
+      <UniqueIdentifier>{4aae4e40-94f7-4d32-9a91-c0c37a2edf0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KamataEngine\Adapter">
+      <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{d4adb15c-0891-4f5c-9bca-f425732aad03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{f6c664e9-c2fa-4486-af5a-e349975a1d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2f5c46c9-31f0-4015-a486-bb83e2a7fe36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screen">
+      <UniqueIdentifier>{54456ed3-8f7c-4af6-b6b5-38824af5a716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeltaTime">
+      <UniqueIdentifier>{5aee1a7d-a269-4214-86cd-e2650eaca528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{d53b2511-82e5-4729-9d7a-46cdb2fb98b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{6c2ad092-9771-40cd-ad65-2e4db1dd69a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Container">
+      <UniqueIdentifier>{80e55c5b-7cb2-4864-be2b-1c46a020bbc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{7b109ec4-6463-4ebe-b780-5b0d090a7655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Line">
+      <UniqueIdentifier>{7a225a20-37af-4f4a-82eb-27d188a9e415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Circle">
+      <UniqueIdentifier>{a2bfeed5-fb5e-41b5-96f8-0ecea0bed219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Segment">
+      <UniqueIdentifier>{d8249f9e-efbb-460f-b1bc-5c6a79d99beb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Back">
+      <UniqueIdentifier>{bd382cd3-d125-44f2-835a-437086544c83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TitleLog">
+      <UniqueIdentifier>{4a17a844-bedf-4716-b5e8-2c9b796b0e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lerp">
+      <UniqueIdentifier>{71546c62-5913-492b-8c8a-8ae80ac3283a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Goal">
+      <UniqueIdentifier>{3c412ab3-7ab2-45bc-89d4-f851a77a50e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Quad">
+      <UniqueIdentifier>{91fc8e53-614e-44c7-bec7-8e864f8c0425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Easing">
+      <UniqueIdentifier>{793b69c5-6d22-435d-9197-af278f7cd46d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{5dd1ee3b-bd61-481e-8ec1-30a8d4dd2c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Key">
+      <UniqueIdentifier>{2a9db279-7456-476c-8de9-7fe743107e07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Controller">
+      <UniqueIdentifier>{ad7409a6-a5f2-4732-9cc0-535c93926adb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\scene\GameScene.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\TextureManager.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\DirectXGame\base\WinApp.cpp">
+      <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="DeltaTime.cpp">
+      <Filter>DeltaTime</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Container.cpp">
+      <Filter>Container</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Line.cpp">
+      <Filter>Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Segment.cpp">
+      <Filter>Math\Segment</Filter>
+    </ClCompile>
+    <ClCompile Include="Back.cpp">
+      <Filter>Back</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>TitleLog</Filter>
+    </ClCompile>
+    <ClCompile Include="Goal.cpp">
+      <Filter>Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Easing.cpp">
+      <Filter>Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerInput.cpp">
+      <Filter>Input\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Key.cpp">
+      <Filter>Input\Key</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\2d\DebugText.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\scene\GameScene.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\input\Input.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Model.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\SafeDelete.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\2d\Sprite.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\TextureManager.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\ViewProjection.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\base\WinApp.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\WorldTransform.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\Adapter\Novice.h">
+      <Filter>KamataEngine\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\CircleShadow.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\DebugCamera.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\DirectionalLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\LightGroup.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Material.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\Mesh.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\PointLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\KamataEngine\DirectXGame\3d\SpotLight.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\math\MathUtility.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\math\Matrix4.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\math\Vector2.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\math\Vector3.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DirectXGame\math\Vector4.h">
+      <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix33.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="DeltaTime.h">
+      <Filter>DeltaTime</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Container.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Line</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Math\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment.h">
+      <Filter>Math\Segment</Filter>
+    </ClInclude>
+    <ClInclude Include="Back.h">
+      <Filter>Back</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>TitleLog</Filter>
+    </ClInclude>
+    <ClInclude Include="Lerp.h">
+      <Filter>Lerp</Filter>
+    </ClInclude>
+    <ClInclude Include="Goal.h">
+      <Filter>Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>Math\Quad</Filter>
+    </ClInclude>
+    <ClInclude Include="Easing.h">
+      <Filter>Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerInput.h">
+      <Filter>Input\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>Input\Key</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

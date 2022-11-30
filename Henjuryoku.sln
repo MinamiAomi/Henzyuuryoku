@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Henjuryoku", "Henjuryoku.vcxproj", "{FAE45A99-8C9E-47DE-96BF-57F167F6A5FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE45A99-8C9E-47DE-96BF-57F167F6A5FB}.Debug|x64.ActiveCfg = Debug|x64
+		{FAE45A99-8C9E-47DE-96BF-57F167F6A5FB}.Debug|x64.Build.0 = Debug|x64
+		{FAE45A99-8C9E-47DE-96BF-57F167F6A5FB}.Release|x64.ActiveCfg = Release|x64
+		{FAE45A99-8C9E-47DE-96BF-57F167F6A5FB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {724E3AF0-2BF6-41E5-9774-4E46A8FE8B88}
+	EndGlobalSection
+EndGlobal
