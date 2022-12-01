@@ -18,7 +18,10 @@ public:
 		memcpy(mPreKeys, mKeys, kKeyDataNum);
 		Novice::GetHitKeyStateAll(mKeys);
 		for (int i = 0; i < kKeyDataNum; i++) {
-			mIsInput |= (mKeys[i] != 0);
+			if ((mKeys[i] != 0)) {
+				mIsInput = true;
+				break;
+			}
 		}
 	}
 

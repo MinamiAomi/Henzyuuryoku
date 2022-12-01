@@ -19,19 +19,24 @@ public:
 
 	struct Data
 	{
-		int imgHandle;
-		int imgWidth;
-		int imgHeight;
+		int imgHandle = 0;
+		int imgHandle2 = 0;
+		int imgWidth = 0;;
+		int imgHeight = 0l;
+		int imgWidth2 = 0;
+		int imgHeight2 = 0;
 
 		Vector2 mPositin;
 		Quad mQuad;
+		Quad mQuad2;
 	};
 
 private:
 	Data mData;
+	bool space = false;
 
 public:
-	LogoBase(class Game* game);
+	LogoBase(class Game* game, bool spa = false);
 	virtual ~LogoBase();
 
 	void Create(const Data& data);
@@ -45,6 +50,6 @@ class SpaceMark :
 	public LogoBase {
 
 public:
-	SpaceMark(class Game* game) : LogoBase(game){}
+	SpaceMark(class Game* game, bool spa = true) : LogoBase(game,spa){}
 	void Update();
 };

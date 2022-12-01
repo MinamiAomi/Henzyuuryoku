@@ -73,8 +73,10 @@ void Scene::Draw() {
 		game()->nextMark()->Draw();
 		break;
 	case kStage1:
-		game()->fallMark()->Draw();
+		
 		game()->spaceMark()->Draw();
+		
+		game()->fallMark()->Draw();
 	default:
 		break;
 	}

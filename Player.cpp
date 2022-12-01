@@ -7,6 +7,7 @@
 #include "Line.h"
 #include "Debug.h"
 #include "Scene.h"
+#include "ControllerInput.h"
 
 Player::Player(class Game* game) :
 	GameObject(game)
@@ -233,15 +234,28 @@ void Player::CollisionLines() {
 }
 
 void Player::Input() {
-	mData.mRightInput = 0;
-	if (Key::IsPressed(DIK_D) || Key::IsPressed(DIK_RIGHT)) {
-		mData.mRightInput += 1;
+
+	if (Controller::isInput() == true) {
+
+		Vector2 controller;
+		Controller::getLeftStick(0, &controller.x, &controller.y);
+
+		mData.mRightInput = Math::GetSign(Vector2Math::Dot(mData.mDirection, controller));
+
 	}
-	if (Key::IsPressed(DIK_A) || Key::IsPressed(DIK_LEFT)) {
-		mData.mRightInput += -1;
+	else {
+
+		mData.mRightInput = 0;
+		if (Key::IsPressed(DIK_D)) {
+			mData.mRightInput += 1;
+		}
+		if (Key::IsPressed(DIK_A)) {
+			mData.mRightInput += -1;
+		}
+
 	}
-	mData.mSpaceInput = Key::IsTrigger(DIK_SPACE) ? true : false;
-	
+	mData.mSpaceInput = Key::IsTrigger(DIK_SPACE) || Controller::isTrigger(0,kControllerButtonA) ? true : false;
+
 	//if (Key::IsTrigger(DIK_T)) {
 	//	mData.mPosition = { 100, 500 };
 	//	mData.mDirection = { 1,0 };

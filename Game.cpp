@@ -12,6 +12,7 @@
 #include "Debug.h"
 #include "Logo.h"
 #include "Goal.h"
+#include "ControllerInput.h"
 
 Game::Game() {
 	Srand();
@@ -39,6 +40,8 @@ Game::Game() {
 
 	mGoal = new Goal(this);
 
+	
+	Controller::Add();
 }
 
 Game::~Game() {
@@ -90,7 +93,11 @@ void Game::Run() {
 		Debug::PrintNumReset();
 		// ÉLÅ[ì¸óÕÇéÛÇØéÊÇÈ
 		Key::SetState();
+		Controller::SetState();
 		DeltaTime::CalcDeltaTime();
+
+		mIsController = Controller::isInput() == true ? true : mIsController;
+		mIsController = Key::isInput() == true ? false : mIsController;
 
 		//if (Key::IsTrigger(DIK_TAB))
 		//	mIsDebug ^= true;

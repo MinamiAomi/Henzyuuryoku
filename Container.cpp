@@ -53,6 +53,8 @@ void Container::setData() {
 
 	mGameData.space.imgWidth = 224;
 	mGameData.space.imgHeight = 96;
+	mGameData.space.imgWidth2 = 96;
+	mGameData.space.imgHeight2 = 96;
 	mGameData.space.mPositin = { 0,0 };
 	mGameData.space.mQuad = {
 		{-mGameData.space.imgWidth / 4.0f,(float)mGameData.space.imgHeight / 4.0f + 100},
@@ -61,6 +63,13 @@ void Container::setData() {
 		{mGameData.space.imgWidth / 4.0f, 90}
 	};
 
+	mGameData.space.mQuad2 = {
+		{-mGameData.space.imgWidth2 / 4.0f,(float)mGameData.space.imgHeight2 / 4.0f + 100},
+		{mGameData.space.imgWidth2 / 4.0f,(float)mGameData.space.imgHeight2 / 4.0f + 100},
+		{-mGameData.space.imgWidth2 / 4.0f, 90},
+		{mGameData.space.imgWidth2 / 4.0f, 90}
+	};
+	
 	mGameData.back.imgWidth = 128;
 	mGameData.back.imgHeight = 128;
 
@@ -113,6 +122,7 @@ void Container::setImages() {
 	mGameData.nextMark.imgHandle = Novice::LoadTexture("./resource/images/next.png");
 	mGameData.fallMark.imgHandle = Novice::LoadTexture("./resource/images/fallMark.png");
 	mGameData.space.imgHandle = Novice::LoadTexture("./resource/images/space.png");
+	mGameData.space.imgHandle2 = Novice::LoadTexture("./resource/images/A.png");
 	mGameData.back.imgHandle = Novice::LoadTexture("./resource/images/partical.png");
 	mGameData.goal.imgHandle = Novice::LoadTexture("./resource/images/goal.png");
 	
@@ -190,8 +200,8 @@ void Container::setStageData() {
 
 	mGameData.scene.mStageDatas[Scene::kStage3].PlayerInitPosition = { 225,362 };
 	mGameData.scene.mStageDatas[Scene::kStage3].PlayerInitTheta = 0.0f;
-	mGameData.scene.mStageDatas[Scene::kStage3].GoalPosition = { 460,498 };
-	mGameData.scene.mStageDatas[Scene::kStage3].GoalTheta = Math::ToRadians(180.0f);
+	mGameData.scene.mStageDatas[Scene::kStage3].GoalPosition = { 420,498 };
+	mGameData.scene.mStageDatas[Scene::kStage3].GoalTheta = Math::ToRadians(270.0f);
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {150, 360}, {}, {}, {300,360}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {200, 100}, {}, {}, {400,300}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {500, 300}, {}, {}, {500,100}, 1 });
@@ -204,7 +214,7 @@ void Container::setStageData() {
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {1230, 450}, {}, {}, {1230,350}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {1180, 50}, {}, {}, {1230,150}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {1180, 700}, {}, {}, {1230,600}, 1 });
-	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {420, 500}, {}, {}, {500,500}, 1 });
+	mGameData.scene.mStageDatas[Scene::kStage3].Lines.emplace_back(Line::Data{ {420, 470}, {}, {}, {420,530}, 1 });
 	// ステージ４
 
 	mGameData.scene.mStageDatas[Scene::kStage4].PlayerInitPosition = { 150,202 };
@@ -250,7 +260,7 @@ void Container::setStageData() {
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {270, 460}, {}, {}, {430,460}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {270, 260}, {}, {}, {430,260}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {270, 360}, {0,360}, {100, 550}, {120,650}, 20 });
-	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {140,260}, {140,200}, {200,100}, {270,50}, 10 });
+	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {143,260}, {140,200}, {200,100}, {270,50}, 10 });
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {400, 680}, {}, {}, {460,700}, 1 });
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {430, 360}, {550, 360}, {550, 400}, {510,500}, 10 });
 	mGameData.scene.mStageDatas[Scene::kStage7].Lines.emplace_back(Line::Data{ {640, 700}, {}, {}, {850,700}, 1 });

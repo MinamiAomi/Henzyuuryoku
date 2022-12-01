@@ -56,6 +56,11 @@ public:
 	std::vector<Line>& lines();
 	int lineNum();
 
+private:
+	bool mIsController = false;
+public:
+	bool isController() const { return mIsController; }
+	
 public:
 	Game();
 	~Game();
